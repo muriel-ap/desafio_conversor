@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de Monedas</title>
+  <link rel="shortcut icon" href="./assets/img/favicon-16x16.png" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+  <h1>Conversor de Monedas Nacional</h1>
+  <div id="conversor-container">
+
+    <label for="monto">Pesos CLP:</label>
+    <input type="number" id="monto" placeholder="Ingrese monto en Peso Chileno (CLP)">
+
+    <label for="moneda">Tipo de moneda a convertir:</label>
+    <select id="moneda">
+        <option value="dolar">Dólar</option>
+        <option value="euro">Euro</option>
+    </select>
+
+    <button id="convertir">Convertir</button>
+    <p id="resultado"></p>
+  </div>
+
+  <div id="grafico-container">
+    <canvas id="grafico"  width="900" height="400"></canvas>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
